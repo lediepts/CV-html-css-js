@@ -1,0 +1,255 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 3rem;
+  font-family: 'Style Script', cursive;
+  color: rgb(25, 0, 184);
+  text-shadow: 1px 1px 1px rgba(25, 0, 184, 0.2), 1px 2px 2px rgba(25, 0, 184, 0.2), 1px 3px 3px rgba(25, 0, 184, 0.2), 1px 4px 4px rgba(25, 0, 184, 0.4);
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header .logo a:visited {
+  color: currentColor;
+}
+
+header .logo a:active {
+  color: rgb(153, 0, 255);
+}
+
+header ul.menu {
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+header ul.menu li {
+  margin: 0 1rem;
+}
+
+header ul.menu li a {
+  text-decoration: none;
+  font-weight: 100;
+  color: black;
+}
+
+header ul.menu li a.active, header ul.menu li a:hover {
+  color: rgb(21, 142, 255);
+}
+
+header #menuButton {
+  display: none;
+}
+
+header #panelMenu {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: var(--footer-height);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff5;
+  box-shadow: 0 -2px 10px rgba(25, 0, 184, 0.02);
+  padding: 1rem 2rem;
+  z-index: 100;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 100;
+}
+
+footer>div {
+  display: flex;
+}
+
+footer>div>div {
+  margin: 0 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+footer>div>div span {
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+}
+
+.fa-facebook {
+  color: blue;
+}
+
+.fa-twitter {
+  color: rgb(0, 195, 255);
+}
+
+.fa-linkedin {
+  color: #0A66C2;
+}
+
+.fa-instagram {
+  color: #c20a51;
+}
+
+#block-about-me {
+  height: 80vh;
+  background: rgba(208, 205, 255, 0.192);
+  background: linear-gradient(to right, #d9fcff 0%, #d9fcff 40%, #fff 40%, #fff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#block-about-me .card {
+  width: 20vw;
+  background: #dbfffe;
+  height: 65%;
+  box-shadow: -2px 2px 1rem rgba(0, 0, 0, 0.2);
+  border-right: 1px solid #0044ff0a;
+  margin-right: 1rem;
+}
+
+#block-about-me .card__main {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#block-about-me .card__main .avatar {
+  margin-top: 1vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#block-about-me .card__main .avatar img {
+  width: 100%;
+}
+
+#block-about-me .card__main .name {
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+}
+
+#block-about-me .card__main .name::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 0.2rem;
+  background: #0A66C2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#block-about-me .card__main .position {
+  padding: 1rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
+
+#block-about-me .card__main .position p {
+  margin: 0.6rem auto;
+}
+
+#block-about-me .card__action {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+#block-about-me .card__action i {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+#block-about-me .text {
+  width: 20vw;
+  background: #ffffff;
+  height: 65%;
+}
+
+#block-about-me .text {
+  display: flex;
+  flex-direction: column;
+}
+
+#block-about-me .text h2 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+#block-about-me .text h4 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#block-about-me .welcome-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#block-about-me .welcome-action button {
+  outline: none;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+#block-about-me .welcome-action button:nth-child(1) {
+  border-color: transparent;
+  background: rgb(21, 68, 255);
+  color: #fff;
+  margin-right: 0.4rem;
+}
+
+#block-about-me .welcome-action button:nth-child(1):hover {
+  border-color: rgb(21, 68, 255);
+  background: #fff;
+  color: rgb(21, 68, 255);
+}
+
+#block-about-me .welcome-action button:nth-child(2) {
+  background: rgb(255, 255, 255);
+}
+
+#block-about-me .welcome-action button:nth-child(2):hover {
+  border-color: #fff;
+  background: rgb(21, 68, 255);
+  color: #fff;
+}
+
+#block-about-me .text p {
+  margin: 1rem auto;
+  letter-spacing: 1px;
+  text-indent: 1.5rem;
+}

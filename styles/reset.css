@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Style+Script&display=swap');
+:root {
+  --font-size: 10px;
+  --footer-height: 6rem;
+  --footer-height-mobile: 10rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  content: "";
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background: rgb(237, 255, 255);
+  font-family: 'Noto Serif JP', serif;
+  min-height: 150vh;
+}
+
+a {
+  text-decoration: none;
+}
